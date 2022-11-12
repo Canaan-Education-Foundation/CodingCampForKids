@@ -1,15 +1,18 @@
-
-def draw_grid(width = 5, height = 5):
-    # Function for drawing the graph paper grid
-    # on screen
-    return None
+from graph_paper import Graph_Paper
 
 def main():
     # Function for starting the program and defining
     # important variables.
-    return None
+    grid = Graph_Paper(width = 10, height = 10, start_x = 2, start_y = 2)
+    grid.move_right()
+    grid.fill()
+    grid.move_down()
+    grid.fill()
+    grid.move_right()
+    grid.fill()
+    print(grid.get_row())
+    print(grid.get_column())
+    grid.show()
 
-def draw(grid):
-    # Code added here for drawing on the grid.
-    return None
 
+main()
